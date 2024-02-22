@@ -43,4 +43,4 @@ class PrusaConnectCameraServer(Sensor):
         self.clf.fit(self.X, self.y)
 
     async def get_readings(self, extra: Optional[Dict[str, Any]] = None, **kwargs) -> Mapping[str, Any]:
-        return {"predictions": self.clf.predict(self.X)}
+        return {"predictions": str(self.clf.predict(self.X))}
