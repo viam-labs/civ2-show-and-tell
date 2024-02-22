@@ -9,10 +9,10 @@
       "model": "viam-labs:showtell:example"
     }
   ],
-  "entrypoint": "dist/main",
   "build": {
     "build": "sh build.sh",
     "path": "dist/archive.tar.gz",
     "arch" : ["linux/arm64", "linux/amd64", "darwin/arm64"]
-  }
+  },
+  "entrypoint": "dist/main"
 }
